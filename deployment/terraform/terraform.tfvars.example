@@ -1,0 +1,38 @@
+# Required variables
+web_app_name_prefix = "amp-saas-accelerator-unique"
+location            = "East US"
+publisher_admin_users = "admin@example.com,user2@example.com"
+
+# Optional variables with defaults
+resource_group_name = ""  # If empty, uses web_app_name_prefix
+tenant_id          = ""  # If empty, uses current tenant
+sql_database_name  = ""  # If empty, uses web_app_name_prefix + "AMPSaaSDB"
+sql_server_name    = ""  # If empty, uses web_app_name_prefix + "-sql"
+key_vault_name     = ""  # If empty, uses web_app_name_prefix + "-kv"
+
+# Azure AD Application settings (if you have existing ones)
+ad_application_id          = ""  # Leave empty to create new
+ad_application_secret      = ""  # Leave empty to create new
+ad_application_id_admin    = ""  # Leave empty to create new
+ad_mt_application_id_portal = ""  # Leave empty to create new
+
+# Admin portal configuration
+is_admin_portal_multi_tenant = false
+
+# SQL Server admin settings (if you want to specify different admin)
+sql_admin_username = ""  # If empty, uses current user
+sql_admin_object_id = ""  # If empty, uses current user
+
+# Network settings
+current_client_ip = ""  # If provided, adds your IP to SQL firewall
+
+# Logo URLs (optional)
+logo_url_png = ""  # URL to PNG logo
+logo_url_ico = ""  # URL to ICO logo
+
+# Tags
+tags = {
+  Environment = "Development"
+  Project     = "SaaS Accelerator"
+  Owner       = "Your Name"
+}

@@ -361,3 +361,22 @@ src/Marketplace.SaaS.Accelerator.CustomerSite/appsettings.Development.json
 
 .vscode/launch.json
 .vscode/tasks.json
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform/
+.terraform.lock.hcl
+terraform.tfplan
+terraform.tfplan.*
+.terraform.tfstate.lock.info
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
